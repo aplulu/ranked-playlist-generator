@@ -1,0 +1,107 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="BeatSaberPlaylistsLib, Version=1.4.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(BeatSaberPath)\Libs\BeatSaberPlaylistsLib.dll</HintPath>
+      </Reference>
+      <Reference Include="BSML, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(BeatSaberPath)\Plugins\BSML.dll</HintPath>
+      </Reference>
+      <Reference Include="HMLib, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(BeatSaberPath)\Beat Saber_Data\Managed\HMLib.dll</HintPath>
+      </Reference>
+      <Reference Include="HMUI, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(BeatSaberPath)\Beat Saber_Data\Managed\HMUI.dll</HintPath>
+      </Reference>
+      <Reference Include="IPA.Loader, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(BeatSaberPath)\Beat Saber_Data\Managed\IPA.Loader.dll</HintPath>
+      </Reference>
+      <Reference Include="Main, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(BeatSaberPath)\Beat Saber_Data\Managed\Main.dll</HintPath>
+      </Reference>
+      <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+        <HintPath>$(BeatSaberPath)\Libs\Newtonsoft.Json.dll</HintPath>
+      </Reference>
+      <Reference Include="SiraUtil, Version=2.5.7.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(BeatSaberPath)\Plugins\SiraUtil.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(BeatSaberPath)\Beat Saber_Data\Managed\UnityEngine.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(BeatSaberPath)\Beat Saber_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(BeatSaberPath)\Beat Saber_Data\Managed\UnityEngine.UI.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(BeatSaberPath)\Beat Saber_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      </Reference>
+      <Reference Include="Zenject, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(BeatSaberPath)\Beat Saber_Data\Managed\Zenject.dll</HintPath>
+      </Reference>
+      <Reference Include="Zenject-usage, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(BeatSaberPath)\Beat Saber_Data\Managed\Zenject-usage.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="RankedPlaylistGenerator.csproj.user" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="manifest.json" />
+      <EmbeddedResource Include="manifest.json" />
+      <None Remove="Resources\images\0.png" />
+      <EmbeddedResource Include="Resources\images\0.png" />
+      <None Remove="Resources\images\1.png" />
+      <EmbeddedResource Include="Resources\images\1.png" />
+      <None Remove="Resources\images\2.png" />
+      <EmbeddedResource Include="Resources\images\2.png" />
+      <None Remove="Resources\images\3.png" />
+      <EmbeddedResource Include="Resources\images\3.png" />
+      <None Remove="Resources\images\4.png" />
+      <EmbeddedResource Include="Resources\images\4.png" />
+      <None Remove="Resources\images\5.png" />
+      <EmbeddedResource Include="Resources\images\5.png" />
+      <None Remove="Resources\images\6.png" />
+      <EmbeddedResource Include="Resources\images\6.png" />
+      <None Remove="Resources\images\7.png" />
+      <EmbeddedResource Include="Resources\images\7.png" />
+      <None Remove="Resources\images\8.png" />
+      <EmbeddedResource Include="Resources\images\8.png" />
+      <None Remove="Resources\images\9.png" />
+      <EmbeddedResource Include="Resources\images\9.png" />
+      <None Remove="Resources\images\10.png" />
+      <EmbeddedResource Include="Resources\images\10.png" />
+      <None Remove="Resources\images\11.png" />
+      <EmbeddedResource Include="Resources\images\11.png" />
+      <None Remove="Resources\images\12.png" />
+      <EmbeddedResource Include="Resources\images\12.png" />
+      <None Remove="Resources\images\13.png" />
+      <EmbeddedResource Include="Resources\images\13.png" />
+      <None Remove="Resources\images\14.png" />
+      <EmbeddedResource Include="Resources\images\14.png" />
+      <None Remove="Resources\images\15.png" />
+      <EmbeddedResource Include="Resources\images\15.png" />
+      <None Remove="Resources\images\n.png" />
+      <EmbeddedResource Include="Resources\images\n.png" />
+      <None Remove="Resources\images\pp_200.png" />
+      <EmbeddedResource Include="Resources\images\pp_200.png" />
+      <None Remove="Resources\images\pp_300.png" />
+      <EmbeddedResource Include="Resources\images\pp_300.png" />
+      <None Remove="Resources\images\pp_400.png" />
+      <EmbeddedResource Include="Resources\images\pp_400.png" />
+      <None Remove="Resources\images\pp_500.png" />
+      <EmbeddedResource Include="Resources\images\pp_500.png" />
+    </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy &quot;$(TargetPath)&quot; &quot;$(BeatSaberPath)\Plugins&quot;" />
+  </Target>
+
+</Project>
