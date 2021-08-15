@@ -7,7 +7,7 @@
 
 A Beat Saber Mod that generates a playlist of ScoreSaber ranked beatmaps by difficulty.
 
-# Requirements
+## Requirements
 
 * Beat Saber 1.16.4
 * BSIPA 4.1.4
