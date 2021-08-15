@@ -5,9 +5,9 @@
 
 * Other languages: [English](README.md), [日本語](README.ja.md)
 
-A Beat Saber Mod that generates a playlist of ScoreSaber ranked beatmaps by difficulty.
+ScoreSaberのランク譜面★難易度別プレイリストを生成するBeat Saber Modです。
 
-# Requirements
+## 必要環境
 
 * Beat Saber 1.16.4
 * BSIPA 4.1.4
@@ -15,22 +15,21 @@ A Beat Saber Mod that generates a playlist of ScoreSaber ranked beatmaps by diff
 * SiraUtil 2.4.0
 * BeatSaberPlaylistsLib 1.4.0
 
-## Download
+## ダウンロード
 
-* [RankedPlaylistGenerator.zip (Latest)](https://github.com/aplulu/ranked-playlist-generator/releases/latest/download/RankedPlaylistGenerator.zip)
+* [RankedPlaylistGenerator.zip (最新版)](https://github.com/aplulu/ranked-playlist-generator/releases/latest/download/RankedPlaylistGenerator.zip)
 
-## Installation
+## インストール
 
-Unzip the contents in [RankedPlaylistGenerator.zip](https://github.com/aplulu/ranked-playlist-generator/releases/latest/download/RankedPlaylistGenerator.zip) and place it in your Beat Saber installation directory. (e.g. `C:\Program Files (x86)\Steam\steamapps\common\Beat Saber`)
+`RankedPlaylistGenerator.zip`内のコンテンツを展開し、Beat Saberのインストールディレクトリに入れてください。(例：`C:\Program Files (x86)\Steam\steamapps\common\Beat Saber`)
 
-## Usage
+## 使い方
 
-Click the `RankedPlaylist` button that appears in the Mod menu.
+Modメニューに表示されている`RankedPlaylist`ボタンをクリックします。
 
 ![Usage](usage.png)
 
-
-## Contact
+## 連絡先
 
 * Twitter [@aplulu_cat](https://twitter.com/aplulu_cat)
 * Discord Aplulu#2369
